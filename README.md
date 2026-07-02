@@ -12,7 +12,7 @@
 
 <br />
 
-🌐 **Live Demo:** [https://shifra-ai.vercel.app](https://shifra-ai.vercel.app) &nbsp;|&nbsp; 🖥️ **Server:** [https://shifra-ai-lqhq.onrender.com](https://shifra-ai-lqhq.onrender.com)
+🌐 **Live Demo:** [[https://shifraai-n3v9.onrender.com](https://shifraai-n3v9.onrender.com)] &nbsp;|&nbsp;
 
 <br />
 
@@ -20,7 +20,7 @@
 
 <br />
 
-[🚀 Get Started](#-quick-start) · [✨ Features](#-features) · [📸 Screenshots](#-screenshots) · [🛠️ Tech Stack](#️-tech-stack) · [📂 Project Structure](#-project-structure) · [🤝 Contributing](#-contributing)
+[🚀 Get Started](#-quick-start) · [✨ Features](#-features) · [🛠️ Tech Stack](#️-tech-stack) · [📂 Project Structure](#-project-structure) ·
 
 </div>
 
@@ -40,29 +40,6 @@
 | 💳 **Razorpay Billing** | Integrated payment gateway with Free (200 messages) and Pro (₹99 / 3 months, unlimited) plans |
 | 🛡️ **JWT Auth Middleware** | Secure API routes with HTTP-only cookie-based JWT authentication |
 | 📱 **Fully Responsive** | Beautiful UI that works flawlessly on desktop, tablet, and mobile devices |
-
----
-
-## 📸 Screenshots
-
-<div align="center">
-
-### 🔑 Login Page
-> Sleek onboarding with Google OAuth and feature showcase
-
-### 🏠 Home / Landing Page
-> Hero section with animated assistant preview and step-by-step setup guide
-
-### 🔧 Assistant Builder
-> No-code dashboard to customize your AI assistant — name, tone, theme, API key, and navigation pages
-
-### 💳 Billing Page
-> Free vs Pro plan comparison with Razorpay payment integration
-
-### 🤖 Embeddable Widget
-> The voice assistant widget that lives on your website — supports Dark, Light, Glass, and Neon themes
-
-</div>
 
 ---
 
@@ -326,18 +303,6 @@ Navigate to `http://localhost:5173` — you're all set! 🎉
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! Here's how you can help:
-
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
-3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
-4. **Push** to the branch (`git push origin feature/amazing-feature`)
-5. **Open** a Pull Request
-
----
-
 ## 📝 Environment Variables Reference
 
 ### Server (`Server/.env`)
@@ -362,18 +327,3 @@ Contributions are welcome! Here's how you can help:
 | `VITE_FIREBASE_APP_ID` | Firebase app ID |
 | `VITE_RAZORPAY_KEY_ID` | Razorpay key for client |
 
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
-
----
-
-<div align="center">
-
-### Built with ❤️ by [Jenil Mungalpara](https://github.com/Jenil-Mungalpara)
-
-⭐ **Star this repo** if you found it useful!
-
-</div>
