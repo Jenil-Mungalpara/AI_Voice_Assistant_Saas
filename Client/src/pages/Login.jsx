@@ -10,7 +10,7 @@ import { signInWithPopup } from 'firebase/auth';
 import { auth, provider } from '../utils/firebase';
 import axios from 'axios';
 import { ServerUrl } from '../App';
-import { data, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
 
 function Login({setUser}) {
@@ -81,7 +81,7 @@ function Login({setUser}) {
                   Continue with Google
                 </button>
 
-                <p className='mt-4 text-sm text-[#64748b]'>Free Plan Inlcudes 200 AI Responses</p>   
+                <p className='mt-4 text-sm text-[#64748b]'>Free Plan Includes 200 AI Responses</p>   
           </div>
 
             {/*right*/}

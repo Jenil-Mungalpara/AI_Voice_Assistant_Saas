@@ -4,9 +4,7 @@ import { FiPlus } from "react-icons/fi";
 import { FiTrash, FiCopy } from "react-icons/fi";
 import axios from 'axios';
 import toast from 'react-hot-toast';
-import { CLIENT_URL } from '../App';
-
-const ServerUrl = "http://localhost:8000";
+import { CLIENT_URL, ServerUrl } from '../App';
 
 const THEMES = [
    "light", "dark", "glass", "neon",
@@ -330,10 +328,22 @@ Your Website Content
                      </button>
                   </div>
 
-                  <div className='grid grid-cols-1 sm:grid-cols-3 gap-3'>
-                     <input type="text" placeholder='Page name' className='border border-gray-200 rounded-2xl px-4 py-3' onChange={(e) => setPageName(e.target.value)} value={pageName} />
-                     <input type="text" placeholder='/pricing' className='border border-gray-200 rounded-2xl px-4 py-3' onChange={(e) => setPagePath(e.target.value)} value={pagePath} />
-                     <input type="text" placeholder='Pricing , Plan' className='border border-gray-200 rounded-2xl px-4 py-3' onChange={(e) => setPageKeywords(e.target.value)} value={pageKeywords} />
+                  <div className='grid grid-cols-1 sm:grid-cols-3 gap-4'>
+                     <div>
+                        <label className='text-sm font-medium text-gray-700 block mb-1'>Page Name</label>
+                        <input type="text" placeholder='e.g. Pricing Page' className='w-full border border-gray-200 rounded-2xl px-4 py-3' onChange={(e) => setPageName(e.target.value)} value={pageName} />
+                        <p className='text-xs text-gray-400 mt-1'>Display name of the page</p>
+                     </div>
+                     <div>
+                        <label className='text-sm font-medium text-gray-700 block mb-1'>Page URL Path</label>
+                        <input type="text" placeholder='e.g. /pricing' className='w-full border border-gray-200 rounded-2xl px-4 py-3' onChange={(e) => setPagePath(e.target.value)} value={pagePath} />
+                        <p className='text-xs text-gray-400 mt-1'>URL path to redirect to</p>
+                     </div>
+                     <div>
+                        <label className='text-sm font-medium text-gray-700 block mb-1'>Voice Keywords</label>
+                        <input type="text" placeholder='e.g. pricing, plans, cost' className='w-full border border-gray-200 rounded-2xl px-4 py-3' onChange={(e) => setPageKeywords(e.target.value)} value={pageKeywords} />
+                        <p className='text-xs text-gray-400 mt-1'>Comma-separated trigger words</p>
+                     </div>
                   </div>
 
                   <div className='mt-5 space-y-3'>

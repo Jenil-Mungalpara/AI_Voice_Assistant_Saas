@@ -74,7 +74,7 @@ function Home({user}) {
             </button>
 
           </div>
-          <p className='mt-5 text-xs sm:test-sm text-gray-400'>
+          <p className='mt-5 text-xs sm:text-sm text-gray-400'>
             Free plan includes 200 AI responses
           </p>
 
@@ -89,9 +89,9 @@ function Home({user}) {
 
           <div className='max-w-6xl mx-auto'>
              <div className='text-center mb-14'>
-              <h2 className='text-3xl sm:text-4xl fond-bold text-black'>Get started in minutes</h2>
+              <h2 className='text-3xl sm:text-4xl font-bold text-black'>Get started in minutes</h2>
               <p className='text-gray-500 mt-3 text-sm sm:text-base'>
-                Simple setup . No complete integration.
+                Simple setup. No complex integration.
               </p>
              </div>
 

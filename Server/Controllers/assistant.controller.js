@@ -5,7 +5,7 @@ export const getAssistantConfig = async (req,res)=>{
     try {
         const {userId} = req.params
 
-        const user =await User.findById(userId).select("-geminiApiKey")
+        const user =await User.findById(userId).select("assistantName businessName businessType businessDescription theme tone pages enableNavigation enableVoice")
 
         if(!user){
             return res
@@ -44,7 +44,7 @@ export const askAssistant = async (req, res) => {
         }
 
         if (user.plan === "pro" && new Date(user.proExpiresAt) < new Date()) {
-            user.plan === "free"
+            user.plan = "free"
 
             await user.save()
 

@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom'
 import logo from "../assets/logo.svg"
 import { FiLogOut, FiMenu } from "react-icons/fi";
 import { ServerUrl } from '../App';
-import { linkWithCredential } from 'firebase/auth';
 import toast from "react-hot-toast"
 import axios from 'axios';
 import { FiX } from "react-icons/fi";
@@ -13,7 +12,7 @@ const Navbar = ({ user, setUser }) => {
   const [menuOpen,setMenuOpen] = useState(false)
 
 
-  const handleLogout = async(req,res)=>{
+  const handleLogout = async ()=>{
      try {
        await axios.get(ServerUrl+"/api/auth/logout",
         {withCredentials:true}
@@ -43,7 +42,7 @@ const Navbar = ({ user, setUser }) => {
         
         {user && (
          
-          <div className='flex items-center gap-3'>
+          <div className='hidden md:flex items-center gap-3'>
             
              <button 
                onClick={() => navigate("/builder")} 

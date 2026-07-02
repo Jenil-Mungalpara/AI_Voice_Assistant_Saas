@@ -1,8 +1,6 @@
 import dotenv from "dotenv"
 dotenv.config() 
 
-console.log("LOADED KEY ID:", process.env.RAZORPAY_KEY_ID);
-console.log("LOADED SECRET EXISTS?:", !!process.env.RAZORPAY_KEY_SECRET);
 
 import express from "express"
 import connectDB from "./Configs/ConnectDB.js"
@@ -18,7 +16,8 @@ const app = express()
 const privateCors = 
 cors({
   origin: [
-    "https://shifraai-n3v9.onrender.com"
+    "https://shifraai-n3v9.onrender.com",
+    "http://localhost:5173"
   ],
   credentials: true
 });

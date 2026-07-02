@@ -8,8 +8,8 @@ import Builder from './pages/Builder'
 import Billing from './pages/Billing'
 import Navbar from './Components/Navbar'
 import ProtectedRoute from './Components/ProtectedRoute.jsx'
-export const ServerUrl = "https://shifra-ai-lqhq.onrender.com"
-export const CLIENT_URL = "https://shifraai-n3v9.onrender.com"
+export const ServerUrl = import.meta.env.VITE_SERVER_URL || "https://shifra-ai-lqhq.onrender.com"
+export const CLIENT_URL = import.meta.env.VITE_CLIENT_URL || "https://shifraai-n3v9.onrender.com"
 import {Toaster} from "react-hot-toast"
 
 
@@ -52,7 +52,7 @@ function App() {
                <Route  path='/' element={<Home user={user}/>}/>
                <Route path='/builder' element={<Builder user={user} setUser={setUser}/>} />
                 <Route path='/billing' element={<Billing user={user} setUser={setUser}/>} />
-                <Route path='/' element={<Navigate to="/" replace/>} />
+                <Route path='*' element={<Navigate to="/" replace/>} />
              </Routes>
           </ProtectedRoute>} />
         </Routes>

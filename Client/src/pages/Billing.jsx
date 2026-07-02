@@ -2,10 +2,9 @@ import React, { useEffect } from 'react'
 import { useNavigate } from "react-router-dom"
 import toast from "react-hot-toast"
 import axios from "axios"
+import { ServerUrl } from '../App'
 
 const Billing = ({ user , setUser }) => {
-
-  const ServerUrl = "http://localhost:8000"
 
   const navigate = useNavigate()
 
