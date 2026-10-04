@@ -1,4 +1,4 @@
-import {React,useEffect} from 'react'
+import React from 'react'
 import { HiSparkles } from "react-icons/hi2";
 import { HiOutlineSparkles } from "react-icons/hi2";
 import { HiOutlineMicrophone } from "react-icons/hi2";

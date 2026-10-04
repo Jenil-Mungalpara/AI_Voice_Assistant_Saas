@@ -1,4 +1,4 @@
-import mongoose, { trusted } from "mongoose";
+import mongoose from "mongoose";
 
 const pageSchema = new mongoose.Schema({
     name:String,

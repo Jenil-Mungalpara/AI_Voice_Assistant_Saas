@@ -1,5 +1,3 @@
-import User from "../Models/user.model.js";
-
 const Gemini_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent"
 
 
@@ -64,7 +62,6 @@ export const generateGeminiResponse = async ({
 
     } catch (error) {
         console.error("Gemini Fetch Error:", error.message);
-
         throw new Error("Gemini API fetch failed");
     }
 }

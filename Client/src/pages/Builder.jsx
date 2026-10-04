@@ -33,7 +33,6 @@ const Builder = ({ user, setUser }) => {
 
    const [pages, setPages] = useState(user?.pages || []);
 
-   // Sync form state when user prop updates (e.g. after refresh)
    useEffect(() => {
       if (user) {
          setEditAssistant(!user.isSetupComplete)
@@ -160,10 +159,10 @@ const Builder = ({ user, setUser }) => {
 
                         <p className='text-sm text-gray-400'>gemini Status</p>
                         <h2 className={`text-xl font-bold mt-1 capitalize ${user?.geminiStatus === "active"
-                              ? "text-emerald-600"
-                              : user?.geminiStatus === "invalid"
-                                 ? "text-red-500"
-                                 : "text-amber-500"
+                           ? "text-emerald-600"
+                           : user?.geminiStatus === "invalid"
+                              ? "text-red-500"
+                              : "text-amber-500"
                            }`}>{user?.geminiStatus}</h2>
                      </div>
 
@@ -305,7 +304,7 @@ Your Website Content
 
                   <input type='password' placeholder='AIza...'
                      onChange={(e) => setGeminiApiKey(e.target.value)}
-                     value={geminiApiKey} // matches perfectly!
+                     value={geminiApiKey} 
                      className='w-full border border-gray-200 rounded-2xl px-4 py-3' />
 
                   <p className='text-xs text-gray-400 mt-3 leading-6'>
@@ -365,13 +364,13 @@ Your Website Content
 
                </div>
 
-               <button onClick={saveAssistant} 
-                  disabled={loading || 
-                  !assistantName ||
-                  !businessName ||
-                  !businessType ||
-                  !businessDescription ||
-                  !geminiApiKey} className='w-full h-14 rounded-2xl bg-gradient-to-r from-purple-500 to-emerald-500 text-white font-semibold disabled:opacity-50 disabled:cursor-not-allowed'>
+               <button onClick={saveAssistant}
+                  disabled={loading ||
+                     !assistantName ||
+                     !businessName ||
+                     !businessType ||
+                     !businessDescription ||
+                     !geminiApiKey} className='w-full h-14 rounded-2xl bg-gradient-to-r from-purple-500 to-emerald-500 text-white font-semibold disabled:opacity-50 disabled:cursor-not-allowed'>
                   {
                      loading ? "...saving" : user.isSetupComplete ? "Update Assistant" : "Save Assistant"
                   }

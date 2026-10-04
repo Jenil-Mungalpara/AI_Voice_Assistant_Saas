@@ -125,7 +125,7 @@
 
     popup.className = `shifra-popup theme-${assistantConfig.theme}`
 
-    button.className = `shifra-btn theme-${assistantConfig.button}`
+    button.className = `shifra-btn theme-${assistantConfig.theme}`
 
     const title = popup.querySelector(".shifra-title")
 

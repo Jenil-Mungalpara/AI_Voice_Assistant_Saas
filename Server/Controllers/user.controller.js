@@ -33,9 +33,9 @@ export const saveAssistant = async(req,res)=>{
         }
         
         user.assistantName = assistantName;
-        user.businessName = businessName; // Fixed spelling
-        user.businessType = businessType; // Fixed spelling
-        user.businessDescription = businessDescription; // Fixed spelling
+        user.businessName = businessName; 
+        user.businessType = businessType; 
+        user.businessDescription = businessDescription; 
         user.tone = tone;
         user.theme = theme;
 
@@ -46,7 +46,7 @@ export const saveAssistant = async(req,res)=>{
         user.geminiStatus = "active";
         user.pages = pages || [];
 
-        user.isSetupComplete = true; // Fixed typo here
+        user.isSetupComplete = true;
 
         await user.save()
 

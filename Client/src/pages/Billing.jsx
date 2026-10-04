@@ -124,7 +124,7 @@ const Billing = ({ user , setUser }) => {
             <h2 className='text-xl font-bold text-[#081028] mt-1 capitalize'>
               {user?.plan === "pro"
                 ? `${remainingDays} Days`
-                : remainingMessages || "191"}
+                : remainingMessages}
             </h2>
           </div>
         </div>

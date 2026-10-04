@@ -2,9 +2,6 @@ import { genToken } from "../Configs/token.js";
 import User from "../Models/user.model.js"
 
 
-
-
-
 export const googleAuth = async(req,res) =>{
     try {
         const {name,email} = req.body
@@ -45,7 +42,7 @@ export const googleAuth = async(req,res) =>{
 
 export const logOut = async(req,res) => {
     try {
-        await res.clearCookie("token",{
+        res.clearCookie("token",{
             httpOnly:false,
             secure:true,
             sameSite:"none",
